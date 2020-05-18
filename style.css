@@ -164,10 +164,16 @@ small {
   float: right;
 }
 @media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
   h1 {
     font-size: 50px;
   }
   h2 {
     font-size: 20px;
+  }
+  img {
+    object-fit: cover;
   }
 }

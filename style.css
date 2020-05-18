@@ -186,13 +186,13 @@ small {
   }
   .businesses {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 500px 500px 500px;
   }
   .navbar {
-    height: 100px;
+    height: 150px;
   }
   .navbar a {
     display: block;
-    font-size: 25px;
+    font-size: 50px;
   }
 }

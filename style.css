@@ -171,9 +171,9 @@ small {
   clear: right;
   margin-top: 10px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
-    max-width: 600px;
+    max-width: 800px;
   }
   h1 {
     font-size: 50px;
@@ -187,4 +187,13 @@ small {
   .businesses {
     grid-template-columns: 1fr 1fr;
   }
+  .navbar a {
+  float: center;
+  display: block;
+  color: #232323;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
 }

@@ -84,7 +84,7 @@ small {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  grid-template-rows: 150px 150px;
+  grid-template-rows: 200px 200px;
   align-content: center;
   padding: 10px;
 }
@@ -153,8 +153,9 @@ small {
   opacity: 0;
 }
 .link {
-  float: left;
-  line-height: 15px;
+  float: right;
+  color: white;
+  /* line-height: 15px; */
 }
 /* #hallenplan {
   width: 60%;
@@ -166,6 +167,9 @@ small {
   float: right;
   width:60%;
   height:280px;
+}
+#contact-info p {
+  font-size: 14px;
 }
 .footer {
   background-color: #59cd32;
@@ -191,20 +195,31 @@ small {
   .navbar {
     height: 50px;
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
   .navbar a {
     font-size: 30px; 
   }
+  .show-description p {
+    height: 200px;
+  }
   p {
     font-size: 24px;
   }
-  .show-description small {
-    font-size: 20px;
+  .est-text {
+    font-size: 36px;
+    line-height: 1.4;
+    height: 42px;
+    text-align: left;
+  }
+  small {
+    font-size: 30px;
+    line-height: 1;
   }
   .hist-text {
-    font-size: 12px;
+    font-size: 13px;
   }
+
   #googleMap {
     float: right;
     width: 40%;

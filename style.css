@@ -152,8 +152,7 @@ small {
   opacity: 0;
 }
 .link {
-  float: right;
-  background-color: blanchedalmond;
+  float: left;
   line-height: 15px;
 }
 #hallenplan {
@@ -165,9 +164,16 @@ small {
 #googleMap {
   float: right;
 }
-@media (max-width: 500px) {
+.footer {
+  background-color: #59cd32;
+  height: 40px;
+  clear: left;
+  clear: right;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
   body {
-    max-width: 500px;
+    max-width: 600px;
   }
   h1 {
     font-size: 50px;
@@ -179,7 +185,6 @@ small {
     object-fit: cover;
   }
   .businesses {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 }

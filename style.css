@@ -1,3 +1,4 @@
+
 body {
   max-width: 900px;
   margin: 0 auto;
@@ -155,14 +156,16 @@ small {
   float: left;
   line-height: 15px;
 }
-#hallenplan {
+/* #hallenplan {
   width: 60%;
-}
+} */
 #contact-info {
   text-align: left;
 }
 #googleMap {
   float: right;
+  width:60%;
+  height:280px;
 }
 .footer {
   background-color: #59cd32;
@@ -171,15 +174,15 @@ small {
   clear: right;
   margin-top: 10px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   body {
     max-width: 800px;
   }
   h2 {
     font-size: 20px;
   }
-  img {
-    object-fit: cover;
+  h3 {
+    font-size: 16px;
   }
   .businesses {
     grid-template-columns: 1fr 1fr;
@@ -187,11 +190,24 @@ small {
   }
   .navbar {
     height: 50px;
+    display: flex;
+    justify-content: center
   }
   .navbar a {
-    font-size: 25px;
+    font-size: 30px; 
   }
-  small {
-    font-size: 20px;
+  p {
+    font-size: 24px;
+  }
+  .show-description small {
+    font-size: 12px;
+  }
+  .hist-text {
+    font-size: 12px;
+  }
+  #googleMap {
+    float: right;
+    width: 40%;
+    height: 400px;
   }
 }

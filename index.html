@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+	<header>
+		<img src="https://arminiusmarkthalle.com/wp-content/uploads/2015/04/Stich.jpg" alt="markthalle-old">
+		<div class="header-container">
+			<div class="title">
+				<h1>Arminiusmarkthalle</h1>
+				<p>moabit's watering-hole</p>
+			</div>
+		</div>
+	</header>
+	<div class="navbar">
+		<a href="#history">history</a>
+		<a href="#businesses">locations</a>
+		<a href="#location">map</a>
+		<a href="#contact">contact</a>
+	</div>
+	<div id="history">
+		<h2><br>History of the Markthalle</h2>
+		<p class="hist-text">Im Dezember 1891 wurde die Arminiusmarkthalle als 10. Berliner Markthalle in Berlin Mitte/Moabit eröffnet.</p>
+		<p class="hist-text">Damit hatte das aufstrebende Gewerbeviertel eine moderne Einkaufsstätte bekommen. Nach nur mehr als einem Jahr Bauzeit wurde die Halle – wie alle Markthallen in Berlin – nach den Plänen des Stadtbaurats Blankenstein errichtet. Diese für damalige Verhältnisse kurze Bauzeit wurde durch moderne Eisen-Konstruktionen mit vorgefertigten Bauelementen ermöglicht. 425 Stände hatten auf 10 Verkaufsgängen Platz.</p>
+		<p class="hist-text">Revitalisiert wurde die Arminiusmarkthalle im Jahr 2010 und dient nun als wohnortnahe Markthalle. Die Markthalle vereint Nostalgie und Tradition mit jungen Ideen, die Impulse für das Leben im Kiez und ein gedeihliches Miteinander von gewachsenen und kreativen neuen Strukturen in Moabit setzen.</p>	
+		<p class="hist-text">Heute ist die Arminiusmarkthalle eine beliebte Markthalle mit großem Frischeangebot und vielfältiger Gastronomie und Genusshandwerk.</p>
+		<p class="hist-text">Abends verwandelt sich die Markthalle zum lebendigen Ort für die unterschiedlichsten Aktivitäten und Veranstaltungen.</p> 
+	</div>
+	<div id="businesses">
+		<h2><br>Our Businesses</h2>
+		<div class="businesses">
+			<div id="mangiare" class="establishment">
+				<p class="est-text">Mangiare<br>
+				<small>the most delicious neopolitan pizza!</small></p>
+			</div>
+			<div id="poutine" class="establishment">
+				<p class="est-text">Poutine Kitchen<br>
+				<small>chips, gravy and cheese curds!</small></p>
+			</div>
+			<div id="pignut" class="establishment">
+				<p class="est-text">Pignut BBQ<br>
+				<small>the best brisket north of the spree</small></p>
+			</div>
+			<div id="pound-pence" class="establishment">
+				<p class="est-text">Pound & Pence<br>
+				<small>looking for a tasty cheeseburger?</small></p>
+			</div>
+			<div id="alimentari" class="establishment">
+				<p class="est-text">Trattoria Alimentari e Vini<br>
+				<small>authentic italian pizza & pasta</small></p>
+			</div>
+			<div id="fischladen" class="establishment">
+				<p class="est-text">Der Fischladen<br>
+				<small>best fish and chips in berlin</small></p>
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<h2><br>Contact</h2>
+		<!-- <img id="hallenplan" src="hallenplan.png" alt="hall-map"> -->
+		<div id="googleMap" style="width:60%;height:400px"></div>
+		<div id="contact-info">
+			<h3>opening hours</h3>
+			<p><small>monday-sunday, 10:00-22:00</small></p>
+			<h3>address</h3>
+			<p><small>Arminiusstraße 2-4, 10551 Berlin</small></p>
+			<h3>phone</h3>
+			<p><small>0177 7811419</small></p>
+		</div>
+	</div>
+	<script>
+		function myMap() {
+			var mapProp= {
+			center:new google.maps.LatLng(52.527380,13.338590), zoom:15,
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj9U_MNBN4aDmWtHT4TnCUxErLljvrYAI&callback=myMap"></script>
+	<script>
+		$('.establishment').on('click', function() {
+			$(this).toggleClass('show-description');
+		});
+	</script>
+</body>

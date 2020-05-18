@@ -1,0 +1,173 @@
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: #232323;
+  color: #dddddd;
+  font-family: Raleway, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #59cd32;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #232323;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #bbbbbb;
+  color: #343835;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
+.header-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.1));
+}
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: Acme;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-family: Raleway, sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding: 20px;
+}
+h3 {
+  
+}
+P {
+  font-size: 20px;
+}
+small {
+  font-size: 14px;
+}
+.hist-text {
+  font-size: 17px;
+  text-align: justify;
+}
+.establishment {
+  position: relative;
+  border-radius: 5px;
+}
+.businesses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: 150px 150px;
+  align-content: center;
+  padding: 10px;
+}
+#mangiare {
+  background-image: url("images/mangiare.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#poutine {
+  background-image: url("images/poutine.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pignut {
+  background-image: url("images/pignut.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#alimentari {
+  background-image: url("images/alimentari.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#fischladen {
+  background-image: url("images/fischladen.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pound-pence {
+  background-image: url("images/pound-pence.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.est-text {
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 28px;
+  overflow: hidden;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.show-description p {
+  height: 80px;
+}
+.businesses .show-description small {
+  opacity: 1;
+}
+.businesses small {
+  opacity: 0;
+}
+#hallenplan {
+  width: 60%;
+}
+#contact-info {
+  text-align: left;
+}
+#googleMap {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
